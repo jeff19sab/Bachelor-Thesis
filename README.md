@@ -9,8 +9,8 @@ Installation:
 
 This project requires two libraries to be installed:
 
-Install project with the files edited:
-download files from this github repository
+Install the project with the files edited:
+download files from this GitHub repository
 
 Original files can be found here:
 Pybullet: https://github.com/bulletphysics/bullet3.git
@@ -27,7 +27,7 @@ Run your code
 
 
 
-    3. Usage:
+Usage
 
 Run the code in VR:
 env = gym.make('PandaReach-v3', render_mode="vr")
