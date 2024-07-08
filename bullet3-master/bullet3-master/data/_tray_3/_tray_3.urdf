@@ -1,0 +1,24 @@
+<robot name="_tray_3">
+    <link name="_name">
+        <visual>
+            <origin xyz="-0.35 -0.0937822222742208 -0.023735777684080166" rpy="0 0 1.57079633" />
+            <geometry>
+                <mesh filename="_tray_3/jeff1.obj" scale="1.0 1.0 1.0" />
+            </geometry>
+            <material name="texture">
+                <color rgba="1.0 1.0 1.0 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.35 -0.0937822222742208 -0.023735777684080166" rpy="0 0 1.57079633" />
+            <geometry>
+                <mesh filename="_tray_3/jeff1.obj" scale="1.0 1.0 1.0" />
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz="0 2 0" rpy="0 0 0" />
+            <mass value="1.0" />
+            <inertia ixx="0.167" ixy="0.0" ixz="0.0" iyy="0.418" iyz="0.0" izz="0.417" />
+        </inertial>
+    </link>
+</robot>

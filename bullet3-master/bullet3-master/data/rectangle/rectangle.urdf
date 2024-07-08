@@ -1,0 +1,79 @@
+<robot name="rectangle_with_cubes">
+    <link name="rectangle">
+        <visual>
+            <origin xyz="-0.0299999993294474 -0.20999999344349063 2.949329903291711e-17" rpy="0 1.570795 0" />
+            <geometry>
+                <mesh filename="rectangle/_rectangle.obj" scale="1.0 1.0 1.0" />
+            </geometry>
+            <material name="texture">
+                <color rgba="1.0 1.0 1.0 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="rectangle/_rectangle.obj" scale="1.0 1.0 1.0" />
+            </geometry>
+            <origin xyz="-0.0299999993294474 -0.20999999344349063 2.949329903291711e-17" rpy="0 0 0" />
+        </collision>
+        <inertial>
+            <mass value="1.0" />
+            <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+        </inertial>
+    </link>
+
+    <!-- Cube 1 -->
+    <link name="cube1">
+        <visual>
+            <origin xyz="0 1 0.0" rpy="0 0 0" />
+            <geometry>
+                <box size="0.6 0.6 0.6" />
+            </geometry>
+            <material name="cube_texture">
+                <color rgba="0.5 0.5 0.5 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <geometry>
+                <box size="0.6 0.6 0.6" />
+            </geometry>
+            <origin xyz="0 1 0.0" rpy="0 0 0" />
+        </collision>
+        <inertial>
+            <mass value="0.1" />
+            <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.1" />
+        </inertial>
+    </link>
+    <joint name="joint_cube1" type="fixed">
+        <parent link="rectangle"/>
+        <child link="cube1"/>
+        <origin xyz="0 1 0.0" rpy="0 0 0"/>
+    </joint>
+
+    <!-- Cube 2 -->
+    <link name="cube2">
+        <visual>
+            <origin xyz="0 -1 0.0" rpy="0 0 0" />
+            <geometry>
+                <box size="0.6 0.6 0.6" />
+            </geometry>
+            <material name="cube_texture">
+                <color rgba="0.5 0.5 0.5 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <geometry>
+                <box size="0.6 0.6 0.6" />
+            </geometry>
+            <origin xyz="0 -1 0.0" rpy="0 0 0" />
+        </collision>
+        <inertial>
+            <mass value="0.1" />
+            <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.1" />
+        </inertial>
+    </link>
+    <joint name="joint_cube2" type="fixed">
+        <parent link="rectangle"/>
+        <child link="cube2"/>
+        <origin xyz="0 -1 0.0" rpy="0 0 0"/>
+    </joint>
+</robot>
