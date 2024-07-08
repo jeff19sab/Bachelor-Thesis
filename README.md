@@ -23,7 +23,7 @@ Open the oculus app and navigate to my devices and make sure the VR headset is c
 In the headset enable Quest Link.
 Open steam VR and make sure everything is connected.
 In visual studio right click on  “App_PhysicsServer_SharedMemory.vcxproj” navigate to “debug” then “start new instance”
-Run your code
+Run your code in the terminal
 
 
 
@@ -38,7 +38,7 @@ env = gym.make('PandaReach-v3', render_mode="human")
 To use a different environment/ task (change the name of the environment):
 	env = gym.make('PandaPush-v3', render_mode="human")
 
-Run VR_test.py to open the teleoperation environment and vrEvent.py for kinesthetic teaching.
+Run VR_test.py to open the environments, uncomment the environment you want to use.
 
 When the environment loads, on the right handler, press the trigger button on the back of the handler and for the left handler press on the joystick, it is important to press them in these orders.
 
