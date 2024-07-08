@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Bachelor Thesis.iml" filepath="$PROJECT_DIR$/.idea/Bachelor Thesis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../bullet3-master/.idea/bullet3-master.iml" filepath="$PROJECT_DIR$/../bullet3-master/.idea/bullet3-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../object2urdf/.idea/object2urdf.iml" filepath="$PROJECT_DIR$/../object2urdf/.idea/object2urdf.iml" />
+      <module fileurl="file://$USER_HOME$/AppData/Roaming/Python/Python38/site-packages/panda_gym/.idea/panda_gym.iml" filepath="$USER_HOME$/AppData/Roaming/Python/Python38/site-packages/panda_gym/.idea/panda_gym.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../bullet3-master/bullet3-master/examples/pybullet/.idea/pybullet.iml" filepath="$PROJECT_DIR$/../bullet3-master/bullet3-master/examples/pybullet/.idea/pybullet.iml" />
+    </modules>
+  </component>
+</project>
